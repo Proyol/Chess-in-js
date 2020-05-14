@@ -6,6 +6,7 @@ const height = cvs.clientHeight;
 const c = 8;
 const p = 16;
 
+<<<<<<< HEAD
 let clicked = false;
 let clickedBefone = false;
 document.addEventListener('mousedown', function(event){
@@ -14,13 +15,21 @@ document.addEventListener('mousedown', function(event){
 
 //create the board
 let board = new Array(8);
+=======
+//create the board
+let board = [];
+>>>>>>> aef4339ccc7cb87011db2085a359bfe003d9da78
 function startBoard(){
     let color;
     let i, j;
     let aux = 1;
 
     for(i = 0; i < c; i++){
+<<<<<<< HEAD
         board[i] = new Array(8);
+=======
+        board[i] = [];
+>>>>>>> aef4339ccc7cb87011db2085a359bfe003d9da78
         for(j = 0; j < c; j++){
             if(aux == 1){
                 color = 'white'
@@ -95,6 +104,7 @@ function startPieces(){
     bp[15] = new King(265, 5, 'black');
 }
 
+<<<<<<< HEAD
 //Insert the pieces on the board
 function insertPieces(){
     //Black pieces
@@ -143,12 +153,19 @@ insertPieces();
 //update every frame of the came
 let selectedCell = [];
 let bColor = 'white';
+=======
+startBoard();
+startPieces();
+
+//update every frame of the came
+>>>>>>> aef4339ccc7cb87011db2085a359bfe003d9da78
 function update(){
     let i, j;
     //display the board
     for(i = 0; i < c; i++){
         for(j = 0; j < c; j++){
             board[i][j].display();
+<<<<<<< HEAD
 
             //select a cell white a piece on it
             if(board[i][j].mouseOver() && board[i][j].Piece != null && clicked){
@@ -172,6 +189,12 @@ function update(){
         }
     }
 
+=======
+            board[i][j].mouseOver();
+        }
+    }
+    
+>>>>>>> aef4339ccc7cb87011db2085a359bfe003d9da78
     //display the pieces
     for(i = 0; i < p; i++){
         wp[i].display();
@@ -179,4 +202,8 @@ function update(){
     }
 }
 
+<<<<<<< HEAD
 let game = setInterval(update, 100);
+=======
+let game = setInterval(update, 100);
+>>>>>>> aef4339ccc7cb87011db2085a359bfe003d9da78

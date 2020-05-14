@@ -20,6 +20,7 @@ class Pawn{
             this.imgy = 200;
         }
         ctx.drawImage(this.asset, this.imgx, this.imgy, this.imgw, this.imgw, this.x,  this.y, this.scl, this.scl);
+<<<<<<< HEAD
     }
 
     showMoves(board, cell){
@@ -47,6 +48,8 @@ class Pawn{
             }
         }
         //console.log(pj, pi);
+=======
+>>>>>>> aef4339ccc7cb87011db2085a359bfe003d9da78
     }
 }
 
@@ -70,11 +73,14 @@ class Rook{
             this.imgy = 200;
         }
         ctx.drawImage(this.asset, this.imgx, this.imgy, this.imgw, this.imgw, this.x,  this.y, this.scl, this.scl);
+<<<<<<< HEAD
     }
 
     showMoves(board, cell){
         let pi = cell.y / 65;
         let pj = cell.x / 65;
+=======
+>>>>>>> aef4339ccc7cb87011db2085a359bfe003d9da78
     }
 }
 
@@ -98,11 +104,14 @@ class Knight{
             this.imgy = 200;
         }
         ctx.drawImage(this.asset, this.imgx, this.imgy, this.imgw, this.imgw, this.x,  this.y, this.scl, this.scl);
+<<<<<<< HEAD
     }
 
     showMoves(board, cell){
         let pi = cell.y / 65;
         let pj = cell.x / 65;
+=======
+>>>>>>> aef4339ccc7cb87011db2085a359bfe003d9da78
     }
 }
 
@@ -126,11 +135,14 @@ class Bishop{
             this.imgy = 200;
         }
         ctx.drawImage(this.asset, this.imgx, this.imgy, this.imgw, this.imgw, this.x,  this.y, this.scl, this.scl);
+<<<<<<< HEAD
     }
 
     showMoves(board, cell){
         let pi = cell.y / 65;
         let pj = cell.x / 65;
+=======
+>>>>>>> aef4339ccc7cb87011db2085a359bfe003d9da78
     }
 }
 
@@ -154,11 +166,14 @@ class Queen{
             this.imgy = 200;
         }
         ctx.drawImage(this.asset, this.imgx, this.imgy, this.imgw, this.imgw, this.x,  this.y, this.scl, this.scl);
+<<<<<<< HEAD
     }
 
     showMoves(board, cell){
         let pi = cell.y / 65;
         let pj = cell.x / 65;
+=======
+>>>>>>> aef4339ccc7cb87011db2085a359bfe003d9da78
     }
 }
 
@@ -175,6 +190,7 @@ class King{
 
         this.asset = new Image;
         this.asset.src = 'chess pieces.png';
+<<<<<<< HEAD
     }
 
     display(){
@@ -187,5 +203,14 @@ class King{
     showMoves(board, cell){
         let pi = cell.y / 65;
         let pj = cell.x / 65;
+=======
+>>>>>>> aef4339ccc7cb87011db2085a359bfe003d9da78
+    }
+
+    display(){
+        if(this.color == 'black'){
+            this.imgy = 200;
+        }
+        ctx.drawImage(this.asset, this.imgx, this.imgy, this.imgw, this.imgw, this.x,  this.y, this.scl, this.scl);
     }
 }
